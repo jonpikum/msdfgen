@@ -1,3 +1,7 @@
+# Branch notice:
+
+This branch exists to build msdfgen statically via Makefile.
+
 # Multi-channel signed distance field generator
 
 This is a utility for generating signed distance fields from vector shapes and font glyphs,

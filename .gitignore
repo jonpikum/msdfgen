@@ -30,3 +30,11 @@ out/
 /build_xcode/
 /cmake-gen.bat
 /line-ending-check.bat
+
+# use Makefile
+cmake/
+CMakeLists.txt
+CMakePresets.json
+msdfgen.rc
+vcpkg.json
+build-release.bat
