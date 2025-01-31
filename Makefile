@@ -46,11 +46,10 @@ SRC = \
 	core/save-tiff.cpp \
 	core/sdf-error-estimation.cpp \
 	core/shape-description.cpp \
-
-#	ext/import-font.cpp \
-#	ext/import-svg.cpp \
-#	ext/resolve-shape-geometry.cpp \
-#	ext/save-png.cpp \
+	ext/import-font.cpp \
+	ext/import-svg.cpp \
+	ext/resolve-shape-geometry.cpp \
+	ext/save-png.cpp \
 
 SRC_C           = $(filter %.c,$(SRC))
 SRC_CXX         = $(filter %.cpp,$(SRC))

@@ -7,6 +7,8 @@ PKG_CONFIG = pkg-config
 
 # includes and libs
 USED_LIBS = \
+	freetype2 \
+	libpng \
 
 INCS = `$(PKG_CONFIG) --cflags $(USED_LIBS)`
 
@@ -15,6 +17,7 @@ LIBS = -lm -lpthread `$(PKG_CONFIG) --libs $(USED_LIBS)`
 # flags
 SHARED_FLAGS = -D_DEFAULT_SOURCE \
 	-D_POSIX_C_SOURCE=200809L \
+	-DMSDFGEN_USE_LIBPNG \
 	-Wall \
 	-Wextra \
 	-pedantic \
