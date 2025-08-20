@@ -25,14 +25,11 @@ SHARED_FLAGS = -D_DEFAULT_SOURCE \
 	-pedantic \
 	-fPIC \
 
-#	-fPIC \
-#	-pthread \
-
 CFLAGS   += $(SHARED_FLAGS)
 CXXFLAGS += $(SHARED_FLAGS)
 CPPFLAGS = $(SHARED_FLAGS)
 LDFLAGS  = $(LIBS)
 
 # compiler & linker
-CC  = /usr/bin/gcc
-CXX = /usr/bin/g++
+CC  ?= /usr/bin/gcc
+CXX ?= /usr/bin/g++
